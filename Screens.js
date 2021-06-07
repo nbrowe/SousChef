@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
-// import { AuthContext } from "./context";
+import { AuthContext } from "./context";
 
 const styles = StyleSheet.create({
   container: {
@@ -70,7 +70,7 @@ export const Search2 = () => (
 );
 
 export const Profile = ({ navigation }) => {
-  // const { signOut } = React.useContext(AuthContext);
+  const { signOut } = React.useContext(AuthContext);
 
   return (
     <ScreenContainer>
@@ -88,7 +88,7 @@ export const Splash = () => (
 );
 
 export const SignIn = ({ navigation }) => {
-  // const { signIn } = React.useContext(AuthContext);
+  const { signIn } = React.useContext(AuthContext);
 
   return (
     <ScreenContainer>
@@ -103,7 +103,7 @@ export const SignIn = ({ navigation }) => {
 };
 
 export const CreateAccount = () => {
-  // const { signUp } = React.useContext(AuthContext);
+  const { signUp } = React.useContext(AuthContext);
 
   return (
     <ScreenContainer>
