@@ -1,3 +1,6 @@
+// This code was grabbed directly from React Native School
+// using the tutorial available at https://www.youtube.com/watch?v=nQVCkqvU1uE
+// Source repo: https://github.com/ReactNativeSchool/getting-started-react-navigation-v5
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
