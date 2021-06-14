@@ -1,0 +1,1 @@
+// Purpose: Overarching layout of user's current food stores
