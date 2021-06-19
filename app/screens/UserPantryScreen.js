@@ -1,11 +1,12 @@
 //UserPantryScreen screen
 import React from 'react';
 import { Text } from 'react-native';
-import { ScreenContainer } from "../components/ui/index";
+import { ListBuilder, ScreenContainer } from "../components/ui/index";
 
-const UserPantryScreen = () => {
+const UserPantryScreen = ({ navigation, route }) => {
   return (
     <ScreenContainer>
+      <ListBuilder showQuantities={route.params.showQuantities} />
       <Text>To be implemented later!!</Text>
     </ScreenContainer>
   );
