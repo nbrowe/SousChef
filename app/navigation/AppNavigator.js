@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
@@ -12,7 +12,7 @@ const AppNavigator = () => {
   return (
     <Tabs.Navigator>
       <Tabs.Screen
-        name="Main"
+        name="MainNavigator"
         component={MainNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -21,7 +21,7 @@ const AppNavigator = () => {
         }}
       />
       <Tabs.Screen
-        name="Profile"
+        name="ProfileNavigator"
         component={ProfileNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
