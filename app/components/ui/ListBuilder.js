@@ -7,10 +7,8 @@ import {
   TextInput,
   View
 } from 'react-native';
-import {
-  ListItem,
-  ScreenContainer
-} from "./index";
+import ListItem from './ListItem';
+import ScreenContainer from './ScreenContainer';
 import styles from '../../config/styles';
 
 const ListBuilder = ( props ) => {
