@@ -4,7 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import {
   MainScreen,
   UserPantryScreen,
-  AddPantryItemScreen
+  AddPantryItemScreen,
+  ShoppingListScreen
 } from '../screens/index';
 
 const Stack = createStackNavigator();
@@ -19,10 +20,15 @@ const MainNavigator = () => (
     <Stack.Screen
       name='ViewPantry'
       component={UserPantryScreen}
-      options={{ title: "My Pantry" }}
+      options={{ title: "My Pantry" }} // How can we set this per view?
     />
     <Stack.Screen
-      name='Add'
+      name='ViewShoppingList'
+      component={ShoppingListScreen}
+      options={{ title: "My Shopping List" }} // How can we set this per view?
+    />
+    <Stack.Screen
+      name='AddPantryItem'
       component={AddPantryItemScreen}
       options={{ title: "New Entry" }}
     />
